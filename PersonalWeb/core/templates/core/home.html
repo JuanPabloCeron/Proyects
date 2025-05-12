@@ -1,0 +1,25 @@
+
+
+{%extends 'core/base.html'%} <!-- con el tag 'extens'  de Django podemos hacer referancia al Html padre-->
+
+
+{%block title%} 
+Portada
+{% endblock%}
+
+
+
+<!--Se carga los estaticos cada vez que queraos usar estos recursos-->
+<!--Recuerda siempre poner las tags una despues de otra para no tener problemas de sintaxis-->
+{%block background%}{%load static %}{% static 'core/img/home-bg.jpg'%}{% endblock%} 
+
+<!--------------------------------------------->
+{%block headers%}
+
+<h1>Juan Pablo Cerón</h1>
+<span class="subheading">Desarrollador</span>
+
+{%endblock%}
+
+<!----------------------------------------------->
+
